@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <style>
+    
+    .container{               
+        text-align: center;
+    }
+
+    .button{
+        padding: 10px;     
+    }
+
+    .center {
+        padding-top: 100px 0;    
+        text-align: center;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .buttons{
+        display: inline-block;
+        padding: 30px;
+    }
+
+    .choices{
+        padding: 15px;
+    }
+    .versus{
+        padding:60px;
+    }
+
+
+    .far:hover {
+        color: rgb(12, 1, 107);
+    }
+
+    .button:hover{
+        border: 1px;
+        border-color: darkorange;
+    }
+
+    .userChoice{
+        color:rgb(12, 1, 107);
+    }
+
+    </style>
+
+    <script src="rock-paper-scissors.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="buttons">
+            <div class="choices">
+                <div style="display: inline-flex">
+                    <div >                        
+                        <p><label class="userChoice" id="userChoice"></label></p>
+                        <p >You: <label id="userPoints">0</label></p>
+                    </div>
+                    <div>
+                        <div class="" id="result">
+                            <p>...</p>
+                        </div>                            
+                    </div>
+                    <div class="computerChoice">                        
+                        <p><label id="computerChoice"></label></p>
+                        <p>Robot: <label id="robotPoints">0</label></p>
+                    </div>   
+                </div>                  
+            </div>
+
+            <div>
+                <i class="button far fa-hand-rock fa-3x" onclick="run('rock')"></i>
+                <i class="button far fa-hand-paper fa-3x" onclick="run('paper')"></i>
+                <i class="button far fa-hand-scissors fa-3x" onclick="run('scissors')"></i>
+            </div>
+          
+        </div>
+        
+    </div>
+    <div class="container">
+        <h2> Rock Paper Scissors </h2>
+    </div>
+
+</body>
+</html>
